@@ -2,54 +2,69 @@
 
 [IDENTITY]
 Project: SMA (Social Media System)
-Type: Large-scale multi-feature social platform
-Goal: Build scalable system with future expansion (AI, governance, advanced database)
+Type: Large-scale social platform
+Goal: Build scalable, multi-platform system with future expansion (AI, governance, intelligent database)
+
+--------------------------------------------------
 
 [USER_PROFILE]
 - No coding knowledge
-- Needs step-by-step instructions (click-by-click)
+- Needs step-by-step (click-by-click)
 - Wants short, efficient answers
-- Prefers fastest method (one-command when possible)
-- Works: test  fix  repeat
+- Prefers fastest methods (one-command if possible)
+- Learns by doing (test → fix → repeat)
+- Prefers automation over manual work
+
+--------------------------------------------------
 
 [LEARNING_RULE]
 - Continuously observe user behavior
-- Update preferences over time
-- Optimize for speed + clarity
+- Improve instruction style over time
+- Add new preferences when discovered
+
+--------------------------------------------------
 
 [CORE_SYSTEM_DESIGN]
-App includes:
+System includes:
 - Global feed (posts, replies, threads)
 - Profiles (followers, metadata)
-- Chat system (DM + anonymous future)
+- Chat system (DM + future anonymous)
 - Groups (public + private + governance)
-- Voice spaces (later)
+- Voice spaces (future)
 - Random chat (anonymous system)
+
+--------------------------------------------------
 
 [DATA_RULE]
 - ALL features must persist in database
-- No frontend-only logic allowed
+- NO frontend-only logic
 - Supabase = single source of truth
 
+--------------------------------------------------
+
 [CURRENT_STATE]
-- UI built
+- UI built and functional visually
 - Backend not properly connected
 - Posts not persistent
 - Chat session-only
 - Groups partial
 - Random chat not working
 
+--------------------------------------------------
+
 [CURRENT_TASK]
 - Fix posts persistence (Supabase)
 
+--------------------------------------------------
+
 [DEVELOPMENT_PHASES]
 Phase 1:
-- Auth basic
+- Auth (basic)
 - Posts persistence
 - Feed real data
 
 Phase 2:
-- Replies/comments
+- Replies/comments persistence
 - Messaging persistence
 
 Phase 3:
@@ -60,37 +75,89 @@ Phase 4:
 - Spaces
 
 Phase 5:
-- Advanced systems (AI, governance, intelligent DB)
+- Advanced systems (AI clones, governance, intelligent DB)
+
+--------------------------------------------------
 
 [FUTURE_COMPATIBILITY]
 System must support:
 - AI user clones
-- Advanced data analysis
 - Democratic moderation systems
-- Cross-platform apps (Web  Android  iOS)
+- Advanced data analysis
+- Cross-platform apps (Web → Android → iOS)
+
+--------------------------------------------------
 
 [EXECUTION_RULES]
-- Always give exact steps
-- Prefer fastest/automated method
-- No assumptions
-- No unnecessary explanation
-- Update system files after changes
+- Always give exact step-by-step instructions
+- Prefer fastest/automated methods
+- No assumptions about user knowledge
+- No unnecessary explanations
 - Never break scalability
+- Backend-first development only
+
+--------------------------------------------------
+
+[FILE_TARGETING_RULE]
+Before making changes:
+1. Identify relevant files
+2. Prioritize:
+   - src/lib/supabase.ts
+   - src/App.tsx
+   - UI components in src
+3. Read code before suggesting changes
+4. If unsure → ask user
+
+--------------------------------------------------
 
 [REFERENCE]
-- PROJECT_STATE.md  detailed state
-- TASKS.md  execution plan
-- ARCHITECTURE.md  system design
-- WEBAPP.txt  FULL feature details (read only when needed)
-- PHY.txt  optional strategy thinking
+- PROJECT_STATE.md → detailed state
+- TASKS.md → execution plan
+- ARCHITECTURE.md → system design
+- WEBAPP.txt → full feature plan (reference only)
+- PHY.txt → optional strategy reference
 
-[EVOLUTION_LOG]
-- Add improvements and observed preferences over time
+--------------------------------------------------
+
+[EVOLUTION_SYSTEM]
+- System must evolve after every step
+- AI must track:
+  - progress
+  - behavior patterns
+  - improvements
+- Updates must be generated automatically in each response
+
+--------------------------------------------------
+
+[MANDATORY_OUTPUT_PROTOCOL]
+
+EVERY response MUST include:
+
+1. ACTION STEPS
+- Exact steps for user
+
+2. CODE CHANGES
+- Full code (ready to paste)
+
+3. SYSTEM UPDATE (MANDATORY)
+- PROJECT_STATE.md update
+- TASKS.md update
+- LIFELINE.md update (if needed)
+
+Rules:
+- Never skip SYSTEM UPDATE
+- Never wait for user to ask
+- Keep updates short and structured
+
+--------------------------------------------------
 
 [INSTRUCTION_TO_AI]
-Read this file first
-Then read TASKS.md
-Continue from CURRENT_TASK only
-Do NOT restart system
-Do NOT overload memory
-Be precise, fast, adaptive
+
+- Read LIFELINE.md first
+- Then read TASKS.md
+- Continue ONLY from CURRENT_TASK
+- Do NOT restart system
+- Do NOT redesign system
+- Do NOT overload memory
+- Always follow MANDATORY_OUTPUT_PROTOCOL
+- Always optimize for speed, clarity, and scalability
